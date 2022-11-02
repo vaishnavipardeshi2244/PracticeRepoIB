@@ -268,3 +268,25 @@ Date:   Wed Nov 2 12:49:54 2022 +0530
 
     Changed .gitignore
 
+
+Note:
+20)To ignore some files to track in git repository
+ i) -> Create text file named ".gitignore" using command (if not exist): touch .gitignore
+ ii)-> Add the name of the file to be ignore in .gitignore file
+
+21)To ignore every file based on extension
+ ii) -> Write *.<extension> in the .gitignore file
+	example : if we want to ignore all files having .log extension
+	open .gitignore file and add " *.log " in that file.  
+
+22)To ignore folder inside git repository
+ ii) -> Write <foldername>/ in the .gitignore file
+	example : if we want to ignore all folder named "dir" inside git repository
+	open .gitignore  file and add " dir/ " in that file.
+
+23)To ignore outer folder inside git repository
+ ii) -> Write /<foldername>/ in the .gitignore file
+	example : if we want to ignore outer folder named "dir" inside git repository
+	open .gitignore  file and add " /dir/ " in that file.
+
+
