@@ -1,0 +1,270 @@
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice
+$ git config --global user.name "Vaishnavi"
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice
+$ git config --global user.email "vaishnavi@gmail.com"
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice
+$ git config --list
+pack.packsizelimit=2g
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files (x86)/Git/mingw32/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=Vaishnavi
+user.email=vaishnavi@gmail.com
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice
+$ git config user.name
+Vaishnavi
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice
+$ git config user.email
+vaishnavi@gmail.com
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice
+$ git init
+Initialized empty Git repository in C:/Users/Vaishnawi Pardeshi/Desktop/Git Practice/.git/
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Git Commands.txt
+        MyDocsFile.docx
+        MyExcelFile.xls
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git add --a
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Git Commands.txt
+        new file:   MyDocsFile.docx
+        new file:   MyExcelFile.xls
+
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git commit -m "Initial Commit"
+[master (root-commit) 333d955] Initial Commit
+ 3 files changed, 33 insertions(+)
+ create mode 100644 Git Commands.txt
+ create mode 100644 MyDocsFile.docx
+ create mode 100644 MyExcelFile.xls
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git log
+commit 333d9550840f737e1abf5e2e06d6543bf450f005 (HEAD -> master)
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Mon Oct 31 18:18:50 2022 +0530
+
+    Initial Commit
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Git Commands.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Git Commands.txt
+        modified:   MyExcelFile.xls
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git add Git Commands.txt
+fatal: pathspec 'Git' did not match any files
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git add GitCommands.txt
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   GitCommands.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Git Commands.txt
+        modified:   MyExcelFile.xls
+
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git add GitCommands.txt
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   GitCommands.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Git Commands.txt
+        modified:   MyExcelFile.xls
+
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git commit -m "Change GitCommands.txt"
+[master fe3e3d5] Change GitCommands.txt
+ 1 file changed, 80 insertions(+)
+ create mode 100644 GitCommands.txt
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Git Commands.txt
+        modified:   MyExcelFile.xls
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git commit -m "Change made"
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Git Commands.txt
+        modified:   MyExcelFile.xls
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git add --a
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    Git Commands.txt
+        modified:   MyExcelFile.xls
+
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git commit -m "Change made in MyExcelFile.xls"
+[master a0f2206] Change made in MyExcelFile.xls
+ 2 files changed, 33 deletions(-)
+ delete mode 100644 Git Commands.txt
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice
+$ git clone https://github.com/tensorflow/tensorflow.git
+Cloning into 'tensorflow'...
+remote: Enumerating objects: 1459672, done.
+remote: Counting objects: 100% (545/545), done.
+remote: Compressing objects: 100% (360/360), done.
+remote: Total 1459672 (delta 264), reused 431 (delta 181), pack-reused 1459127
+Receiving objects: 100% (1459672/1459672), 977.80 MiB | 2.61 MiB/s, done.
+Resolving deltas: 100% (1184458/1184458), done.
+Updating files: 100% (28187/28187), done.
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice
+$ pwd
+/c/Users/Vaishnawi Pardeshi/Desktop/Git Practice
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice
+$ ls
+GitCommands.txt  MyDocsFile.docx  MyExcelFile.xls  tensorflow/
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice
+$ cd tensorflow/
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice/tensorflow (master)
+$ pwd
+/c/Users/Vaishnawi Pardeshi/Desktop/Git Practice/tensorflow
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice/tensorflow (master)
+$ ls
+AUTHORS             ISSUES.md          WORKSPACE           tensorflow/
+BUILD               ISSUE_TEMPLATE.md  arm_compiler.BUILD  third_party/
+CITATION.cff        LICENSE            configure*          tools/
+CODEOWNERS          README.md          configure.cmd
+CODE_OF_CONDUCT.md  RELEASE.md         configure.py
+CONTRIBUTING.md     SECURITY.md        models.BUILD
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice/tensorflow (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice/tensorflow (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice/tensorflow (master)
+$ git log
+commit 1eb8dad0ef72cacd283ede547712f2f4ad74b4fc (HEAD -> master)
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Wed Nov 2 12:49:54 2022 +0530
+
+    Changed .gitignore
+
