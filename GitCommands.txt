@@ -551,3 +551,51 @@ index 90cee64..98fd269 100644
 \ No newline at end of file
 +Vaishu
 \ No newline at end of file
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git diff --staged
+diff --git a/.gitignore b/.gitignore
+index a970faf..a135832 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -1 +1,2 @@
+-git.log
+\ No newline at end of file
++*.log
++dir/
+\ No newline at end of file
+diff --git a/static/TxtFile.txt b/static/TxtFile.txt
+new file mode 100644
+index 0000000..90cee64
+--- /dev/null
++++ b/static/TxtFile.txt
+@@ -0,0 +1 @@
++jhhjhgfhg
+\ No newline at end of file
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   .gitignore
+        new file:   static/TxtFile.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   GitCommands.txt
+        modified:   static/TxtFile.txt
+
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git add --a
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   .gitignore
+        modified:   GitCommands.txt
+        new file:   static/TxtFile.txt
