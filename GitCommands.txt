@@ -1298,3 +1298,89 @@ Commit: Vaishnavi <vaishnavi@gmail.com>
 
     Commit all files
 
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git log --since=1.years
+commit 0bfd83f313f36686f42402be7ca0b822426c9685 (HEAD -> master)
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Thu Nov 3 15:04:59 2022 +0530
+
+    Change made
+
+commit 5afd4411236bcdf91f6fe5c6a5a35abfa62b4d44
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Thu Nov 3 15:01:40 2022 +0530
+
+    Changed GitCommands.txt
+
+commit fe4767a0a1479defe5869a7fbe8f7ba139bdd1ce
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Thu Nov 3 14:43:52 2022 +0530
+
+    Done3
+
+commit ece04baceac6779cc2985b86321e62610bc009c4
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Thu Nov 3 13:37:26 2022 +0530
+
+    Done2
+
+commit 5fdd712c475a02b6d90c2741b7492458a73fdb09
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Thu Nov 3 13:29:04 2022 +0530
+
+    Done Commit
+
+commit 0b419eac9f3dc24602262f9a80cb02f44f2cdb5f
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Thu Nov 3 13:10:16 2022 +0530
+
+    renamed First.txt
+
+commit fa09b6532e64eefd57ee24a2ed1182bbe8c6fc3f
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Thu Nov 3 12:50:51 2022 +0530
+
+    Modified
+
+commit abd0c3fe14028723ff4a2b645e8bad0e473e274f
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Wed Nov 2 18:32:09 2022 +0530
+
+    Add First.txt
+
+commit 43c6279014f75ceffb2fb688b903018947de6a4e
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Wed Nov 2 18:31:13 2022 +0530
+
+    Direct Commit
+
+commit 69d24761e70c29bedf9035e639ef5b50e343ec53
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Wed Nov 2 18:25:19 2022 +0530
+
+    Done
+
+commit b31a057ad92bb27202c099ec4ff5008670e0d8f6
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Wed Nov 2 18:24:51 2022 +0530
+
+    All changes done
+
+commit 8aaa3556b2e84389b976a9a0256169559adbf320
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Wed Nov 2 17:41:03 2022 +0530
+
+    Modify GitCommands.txt
+
+commit 3c9064020e68349b33d95a84e88299506a61a6ea
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Wed Nov 2 14:23:50 2022 +0530
+
+    Add .gitignore
+
+commit 58634cd5e417a98689ef92b2ab4299b9a570f6ac
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Wed Nov 2 14:21:13 2022 +0530
+
+    Commit all files
+
