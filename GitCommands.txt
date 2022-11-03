@@ -869,11 +869,6 @@ nothing to commit, working tree clean
 Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
 $ git status
 On branch master
-nothing to commit, working tree clean
-
-Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
-$ git status
-On branch master
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
@@ -917,54 +912,6 @@ Date:   Thu Nov 3 13:10:16 2022 +0530
 
     renamed First.txt
 
-commit fa09b6532e64eefd57ee24a2ed1182bbe8c6fc3f
-Author: Vaishnavi <vaishnavi@gmail.com>
-Date:   Thu Nov 3 12:50:51 2022 +0530
-
-    Modified
-
-commit abd0c3fe14028723ff4a2b645e8bad0e473e274f
-Author: Vaishnavi <vaishnavi@gmail.com>
-Date:   Wed Nov 2 18:32:09 2022 +0530
-
-    Add First.txt
-
-commit 43c6279014f75ceffb2fb688b903018947de6a4e
-Author: Vaishnavi <vaishnavi@gmail.com>
-Date:   Wed Nov 2 18:31:13 2022 +0530
-
-    Direct Commit
-
-commit 69d24761e70c29bedf9035e639ef5b50e343ec53
-Author: Vaishnavi <vaishnavi@gmail.com>
-Date:   Wed Nov 2 18:25:19 2022 +0530
-
-    Done
-
-commit b31a057ad92bb27202c099ec4ff5008670e0d8f6
-Author: Vaishnavi <vaishnavi@gmail.com>
-Date:   Wed Nov 2 18:24:51 2022 +0530
-
-    All changes done
-
-commit 8aaa3556b2e84389b976a9a0256169559adbf320
-Author: Vaishnavi <vaishnavi@gmail.com>
-Date:   Wed Nov 2 17:41:03 2022 +0530
-
-    Modify GitCommands.txt
-
-commit 3c9064020e68349b33d95a84e88299506a61a6ea
-Author: Vaishnavi <vaishnavi@gmail.com>
-Date:   Wed Nov 2 14:23:50 2022 +0530
-
-    Add .gitignore
-
-commit 58634cd5e417a98689ef92b2ab4299b9a570f6ac
-Author: Vaishnavi <vaishnavi@gmail.com>
-Date:   Wed Nov 2 14:21:13 2022 +0530
-
-    Commit all files
-
 Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
 $ git log -p
 commit fe4767a0a1479defe5869a7fbe8f7ba139bdd1ce (HEAD -> master)
@@ -981,6 +928,18 @@ index b52d994..735944b 100644
 
  Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
  $ git mv Second.txt First.txt
++
++Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
++$ git status
++On branch master
++Changes to be committed:
++  (use "git restore --staged <file>..." to unstage)
++        renamed:    Second.txt -> First.txt
++
++Changes not staged for commit:
++  (use "git add <file>..." to update what will be committed)
++  (use "git restore <file>..." to discard changes in working directory)
++        modified:   GitCommands.txt
 
 commit ece04baceac6779cc2985b86321e62610bc009c4
 Author: Vaishnavi <vaishnavi@gmail.com>
@@ -1003,10 +962,6 @@ diff --git a/MyExcelFile.xls b/MyExcelFile.xls
 deleted file mode 100644
 index 037011c..0000000
 Binary files a/MyExcelFile.xls and /dev/null differ
-
-commit 5fdd712c475a02b6d90c2741b7492458a73fdb09
- ESCOC
-bc009c4
 
 Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
 $ git log -p -1
@@ -1037,96 +992,67 @@ index b52d994..735944b 100644
 +  (use "git restore <file>..." to discard changes in working directory)
 +        modified:   GitCommands.txt
 +
-+
-+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
-+$ git commit -a -m "Done Commit"
-+[master 5fdd712] Done Commit
-+ 2 files changed, 70 insertions(+)
-+ rename Second.txt => First.txt (100%)
-+
-+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
-+$ git status
-+On branch master
-+nothing to commit, working tree clean
-+
-+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
-+$ git status
-+On branch master
-+Changes not staged for commit:
-+  (use "git add <file>..." to update what will be committed)
-+  (use "git restore <file>..." to discard changes in working directory)
-+        modified:   .gitignore
-+
-+no changes added to commit (use "git add" and/or "git commit -a")
-+
-+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
-+$ git status
-+On branch master
-+Changes not staged for commit:
-+  (use "git add <file>..." to update what will be committed)
-+  (use "git restore <file>..." to discard changes in working directory)
-+        modified:   .gitignore
-+        modified:   MyExcelFile.xls
-+
-+no changes added to commit (use "git add" and/or "git commit -a")
-+
-+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
-+$ git rm --cached MyExcelFile.xls
-+rm 'MyExcelFile.xls'
-+
-+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
-+$ git status
-+On branch master
-+Changes to be committed:
-+  (use "git restore --staged <file>..." to unstage)
-+        deleted:    MyExcelFile.xls
-+
-+Changes not staged for commit:
-+  (use "git add <file>..." to update what will be committed)
-+  (use "git restore <file>..." to discard changes in working directory)
-+        modified:   .gitignore
-+
-+
-+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
-+$ git status
-+On branch master
-+Changes to be committed:
-+  (use "git restore --staged <file>..." to unstage)
-+        deleted:    MyExcelFile.xls
-+
-+Changes not staged for commit:
-+  (use "git add <file>..." to update what will be committed)
-+  (use "git restore <file>..." to discard changes in working directory)
-+        modified:   .gitignore
-+
-+
-+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
-+$ git add .
-+
-+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
-+$ git status
-+On branch master
-+Changes to be committed:
-+  (use "git restore --staged <file>..." to unstage)
-+        modified:   .gitignore
-+        deleted:    MyExcelFile.xls
-+
-+
-+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
-+$ git commit -a -m "Done2"
-+[master ece04ba] Done2
-+ 2 files changed, 2 insertions(+), 1 deletion(-)
-+ delete mode 100644 MyExcelFile.xls
-+
-+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
-+$ git status
-+On branch master
-+nothing to commit, working tree clean
-+
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   GitCommands.txt
+        modified:   MyExcelFile.xls
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        mintty.exe.stackdump
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   GitCommands.txt
+        modified:   MyExcelFile.xls
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git log --stat
+commit 2543cf4521646b87fd8ced96896ff4fcb3534da1 (HEAD -> master)
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Thu Nov 3 15:27:15 2022 +0530
+
+    Done 4 Vaishnavi
+
+ .gitignore      |   1 -
+ GitCommands.txt |  19 +++++++++++++++++++
+ MyExcelFile.xls | Bin 0 -> 19968 bytes
+ 3 files changed, 19 insertions(+), 1 deletion(-)
+
+commit be9b35b4b61c7d60c4d639159b8f2694d7f12587
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Thu Nov 3 15:20:37 2022 +0530
+
+    Commit GitCommands file
+
+ GitCommands.txt | 37 +++++++++++++++++++++++++++++++++++++
+ 1 file changed, 37 insertions(+)
+
+commit 30e8d0f5354f75467225ccd9760f046acd8186c9
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Thu Nov 3 15:14:52 2022 +0530
 
 Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
 $ git log --pretty=oneline
-fe4767a0a1479defe5869a7fbe8f7ba139bdd1ce (HEAD -> master) Done3
+2543cf4521646b87fd8ced96896ff4fcb3534da1 (HEAD -> master) Done 4 Vaishnavi
+be9b35b4b61c7d60c4d639159b8f2694d7f12587 Commit GitCommands file
+30e8d0f5354f75467225ccd9760f046acd8186c9 Commit GitCommands file
+0bfd83f313f36686f42402be7ca0b822426c9685 Change made
+5afd4411236bcdf91f6fe5c6a5a35abfa62b4d44 Changed GitCommands.txt
+fe4767a0a1479defe5869a7fbe8f7ba139bdd1ce Done3
 ece04baceac6779cc2985b86321e62610bc009c4 Done2
 5fdd712c475a02b6d90c2741b7492458a73fdb09 Done Commit
 0b419eac9f3dc24602262f9a80cb02f44f2cdb5f renamed First.txt
@@ -1140,253 +1066,165 @@ b31a057ad92bb27202c099ec4ff5008670e0d8f6 All changes done
 58634cd5e417a98689ef92b2ab4299b9a570f6ac Commit all files
 
 Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
-$ git status
-On branch master
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   GitCommands.txt
-
-no changes added to commit (use "git add" and/or "git commit -a")
-
-Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
-$ git commit -a -m "Changed GitCommands.txt"
-[master 5afd441] Changed GitCommands.txt
- 1 file changed, 273 insertions(+)
-
-Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
-$ git status
-On branch master
-nothing to commit, working tree clean
-
-Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
 $ git log --pretty=short
-commit 5afd4411236bcdf91f6fe5c6a5a35abfa62b4d44 (HEAD -> master)
+commit 2543cf4521646b87fd8ced96896ff4fcb3534da1 (HEAD -> master)
 Author: Vaishnavi <vaishnavi@gmail.com>
 
-    Changed GitCommands.txt
+    Done 4 Vaishnavi
 
-commit fe4767a0a1479defe5869a7fbe8f7ba139bdd1ce
+commit be9b35b4b61c7d60c4d639159b8f2694d7f12587
 Author: Vaishnavi <vaishnavi@gmail.com>
 
-    Done3
+    Commit GitCommands file
 
-commit ece04baceac6779cc2985b86321e62610bc009c4
+commit 30e8d0f5354f75467225ccd9760f046acd8186c9
 Author: Vaishnavi <vaishnavi@gmail.com>
 
-    Done2
+    Commit GitCommands file
 
-commit 5fdd712c475a02b6d90c2741b7492458a73fdb09
+commit 0bfd83f313f36686f42402be7ca0b822426c9685
 Author: Vaishnavi <vaishnavi@gmail.com>
-
-    Done Commit
-
-commit 0b419eac9f3dc24602262f9a80cb02f44f2cdb5f
-Author: Vaishnavi <vaishnavi@gmail.com>
-
-    renamed First.txt
-
-commit fa09b6532e64eefd57ee24a2ed1182bbe8c6fc3f
-Author: Vaishnavi <vaishnavi@gmail.com>
-
-    Modified
-
-commit abd0c3fe14028723ff4a2b645e8bad0e473e274f
-Author: Vaishnavi <vaishnavi@gmail.com>
-
-    Add First.txt
-
-commit 43c6279014f75ceffb2fb688b903018947de6a4e
-Author: Vaishnavi <vaishnavi@gmail.com>
-
-    Direct Commit
-
-commit 69d24761e70c29bedf9035e639ef5b50e343ec53
-Author: Vaishnavi <vaishnavi@gmail.com>
-
-    Done
-
-commit b31a057ad92bb27202c099ec4ff5008670e0d8f6
-Author: Vaishnavi <vaishnavi@gmail.com>
-
-    All changes done
-
-commit 8aaa3556b2e84389b976a9a0256169559adbf320
-Author: Vaishnavi <vaishnavi@gmail.com>
-
-    Modify GitCommands.txt
-
-commit 3c9064020e68349b33d95a84e88299506a61a6ea
-
-Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
-$ git log --pretty=full
-commit 5afd4411236bcdf91f6fe5c6a5a35abfa62b4d44 (HEAD -> master)
-Author: Vaishnavi <vaishnavi@gmail.com>
-Commit: Vaishnavi <vaishnavi@gmail.com>
-
-    Changed GitCommands.txt
-
-commit fe4767a0a1479defe5869a7fbe8f7ba139bdd1ce
-Author: Vaishnavi <vaishnavi@gmail.com>
-Commit: Vaishnavi <vaishnavi@gmail.com>
-
-    Done3
-
-commit ece04baceac6779cc2985b86321e62610bc009c4
-Author: Vaishnavi <vaishnavi@gmail.com>
-Commit: Vaishnavi <vaishnavi@gmail.com>
-
-    Done2
-
-commit 5fdd712c475a02b6d90c2741b7492458a73fdb09
-Author: Vaishnavi <vaishnavi@gmail.com>
-Commit: Vaishnavi <vaishnavi@gmail.com>
-
-    Done Commit
-
-commit 0b419eac9f3dc24602262f9a80cb02f44f2cdb5f
-Author: Vaishnavi <vaishnavi@gmail.com>
-Commit: Vaishnavi <vaishnavi@gmail.com>
-
-    renamed First.txt
-
-commit fa09b6532e64eefd57ee24a2ed1182bbe8c6fc3f
-Author: Vaishnavi <vaishnavi@gmail.com>
-Commit: Vaishnavi <vaishnavi@gmail.com>
-
-    Modified
-
-commit abd0c3fe14028723ff4a2b645e8bad0e473e274f
-Author: Vaishnavi <vaishnavi@gmail.com>
-Commit: Vaishnavi <vaishnavi@gmail.com>
-
-    Add First.txt
-
-commit 43c6279014f75ceffb2fb688b903018947de6a4e
-Author: Vaishnavi <vaishnavi@gmail.com>
-Commit: Vaishnavi <vaishnavi@gmail.com>
-
-    Direct Commit
-
-commit 69d24761e70c29bedf9035e639ef5b50e343ec53
-Author: Vaishnavi <vaishnavi@gmail.com>
-Commit: Vaishnavi <vaishnavi@gmail.com>
-
-    Done
-
-commit b31a057ad92bb27202c099ec4ff5008670e0d8f6
-Author: Vaishnavi <vaishnavi@gmail.com>
-Commit: Vaishnavi <vaishnavi@gmail.com>
-
-    All changes done
-
-commit 8aaa3556b2e84389b976a9a0256169559adbf320
-Author: Vaishnavi <vaishnavi@gmail.com>
-Commit: Vaishnavi <vaishnavi@gmail.com>
-
-    Modify GitCommands.txt
-
-commit 3c9064020e68349b33d95a84e88299506a61a6ea
-Author: Vaishnavi <vaishnavi@gmail.com>
-Commit: Vaishnavi <vaishnavi@gmail.com>
-
-    Add .gitignore
-
-commit 58634cd5e417a98689ef92b2ab4299b9a570f6ac
-Author: Vaishnavi <vaishnavi@gmail.com>
-Commit: Vaishnavi <vaishnavi@gmail.com>
-
-    Commit all files
-
-Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
-$ git log --since=1.years
-commit 0bfd83f313f36686f42402be7ca0b822426c9685 (HEAD -> master)
-Author: Vaishnavi <vaishnavi@gmail.com>
-Date:   Thu Nov 3 15:04:59 2022 +0530
 
     Change made
 
 commit 5afd4411236bcdf91f6fe5c6a5a35abfa62b4d44
 Author: Vaishnavi <vaishnavi@gmail.com>
-Date:   Thu Nov 3 15:01:40 2022 +0530
-
-    Changed GitCommands.txt
-
-commit fe4767a0a1479defe5869a7fbe8f7ba139bdd1ce
-Author: Vaishnavi <vaishnavi@gmail.com>
-Date:   Thu Nov 3 14:43:52 2022 +0530
-
-    Done3
-
-commit ece04baceac6779cc2985b86321e62610bc009c4
-Author: Vaishnavi <vaishnavi@gmail.com>
-Date:   Thu Nov 3 13:37:26 2022 +0530
-
-    Done2
-
-commit 5fdd712c475a02b6d90c2741b7492458a73fdb09
-Author: Vaishnavi <vaishnavi@gmail.com>
-Date:   Thu Nov 3 13:29:04 2022 +0530
-
-    Done Commit
-
-commit 0b419eac9f3dc24602262f9a80cb02f44f2cdb5f
-Author: Vaishnavi <vaishnavi@gmail.com>
-Date:   Thu Nov 3 13:10:16 2022 +0530
-
-    renamed First.txt
-
-commit fa09b6532e64eefd57ee24a2ed1182bbe8c6fc3f
-Author: Vaishnavi <vaishnavi@gmail.com>
-Date:   Thu Nov 3 12:50:51 2022 +0530
-
-    Modified
-
-commit abd0c3fe14028723ff4a2b645e8bad0e473e274f
-Author: Vaishnavi <vaishnavi@gmail.com>
-Date:   Wed Nov 2 18:32:09 2022 +0530
-
-    Add First.txt
-
-commit 43c6279014f75ceffb2fb688b903018947de6a4e
-Author: Vaishnavi <vaishnavi@gmail.com>
-Date:   Wed Nov 2 18:31:13 2022 +0530
-
-    Direct Commit
-
-commit 69d24761e70c29bedf9035e639ef5b50e343ec53
-Author: Vaishnavi <vaishnavi@gmail.com>
-Date:   Wed Nov 2 18:25:19 2022 +0530
-
-    Done
-
-commit b31a057ad92bb27202c099ec4ff5008670e0d8f6
-Author: Vaishnavi <vaishnavi@gmail.com>
-Date:   Wed Nov 2 18:24:51 2022 +0530
-
-    All changes done
-
-commit 8aaa3556b2e84389b976a9a0256169559adbf320
-Author: Vaishnavi <vaishnavi@gmail.com>
-Date:   Wed Nov 2 17:41:03 2022 +0530
-
-    Modify GitCommands.txt
-
-commit 3c9064020e68349b33d95a84e88299506a61a6ea
-Author: Vaishnavi <vaishnavi@gmail.com>
-Date:   Wed Nov 2 14:23:50 2022 +0530
-
-    Add .gitignore
-
-commit 58634cd5e417a98689ef92b2ab4299b9a570f6ac
-Author: Vaishnavi <vaishnavi@gmail.com>
-Date:   Wed Nov 2 14:21:13 2022 +0530
-
-    Commit all files
 
 
 Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git log --pretty=full
+commit 2543cf4521646b87fd8ced96896ff4fcb3534da1 (HEAD -> master)
+Author: Vaishnavi <vaishnavi@gmail.com>
+Commit: Vaishnavi <vaishnavi@gmail.com>
+
+    Done 4 Vaishnavi
+
+commit be9b35b4b61c7d60c4d639159b8f2694d7f12587
+Author: Vaishnavi <vaishnavi@gmail.com>
+Commit: Vaishnavi <vaishnavi@gmail.com>
+
+    Commit GitCommands file
+
+commit 30e8d0f5354f75467225ccd9760f046acd8186c9
+Author: Vaishnavi <vaishnavi@gmail.com>
+Commit: Vaishnavi <vaishnavi@gmail.com>
+
+    Commit GitCommands file
+
+commit 0bfd83f313f36686f42402be7ca0b822426c9685
+Author: Vaishnavi <vaishnavi@gmail.com>
+Commit: Vaishnavi <vaishnavi@gmail.com>
+
+    Change made
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git log --since=1.days
+commit 2543cf4521646b87fd8ced96896ff4fcb3534da1 (HEAD -> master)
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Thu Nov 3 15:27:15 2022 +0530
+
+    Done 4 Vaishnavi
+
+commit be9b35b4b61c7d60c4d639159b8f2694d7f12587
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Thu Nov 3 15:20:37 2022 +0530
+
+    Commit GitCommands file
+
+commit 30e8d0f5354f75467225ccd9760f046acd8186c9
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Thu Nov 3 15:14:52 2022 +0530
+
+    Commit GitCommands file
+
+commit 0bfd83f313f36686f42402be7ca0b822426c9685
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Thu Nov 3 15:04:59 2022 +0530
+
+    Change made
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git log --since=1.weeks
+commit 2543cf4521646b87fd8ced96896ff4fcb3534da1 (HEAD -> master)
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Thu Nov 3 15:27:15 2022 +0530
+
+    Done 4 Vaishnavi
+
+commit be9b35b4b61c7d60c4d639159b8f2694d7f12587
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Thu Nov 3 15:20:37 2022 +0530
+
+    Commit GitCommands file
+
+commit 30e8d0f5354f75467225ccd9760f046acd8186c9
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Thu Nov 3 15:14:52 2022 +0530
+
+    Commit GitCommands file
+
+commit 0bfd83f313f36686f42402be7ca0b822426c9685
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Thu Nov 3 15:04:59 2022 +0530
+
+    Change made
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git log --since=1.months
+commit 2543cf4521646b87fd8ced96896ff4fcb3534da1 (HEAD -> master)
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Thu Nov 3 15:27:15 2022 +0530
+
+    Done 4 Vaishnavi
+
+commit be9b35b4b61c7d60c4d639159b8f2694d7f12587
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Thu Nov 3 15:20:37 2022 +0530
+
+    Commit GitCommands file
+
+commit 30e8d0f5354f75467225ccd9760f046acd8186c9
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Thu Nov 3 15:14:52 2022 +0530
+
+    Commit GitCommands file
+
+commit 0bfd83f313f36686f42402be7ca0b822426c9685
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Thu Nov 3 15:04:59 2022 +0530
+
+    Change made
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git log --since=1.years
+commit 2543cf4521646b87fd8ced96896ff4fcb3534da1 (HEAD -> master)
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Thu Nov 3 15:27:15 2022 +0530
+
+    Done 4 Vaishnavi
+
+commit be9b35b4b61c7d60c4d639159b8f2694d7f12587
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Thu Nov 3 15:20:37 2022 +0530
+
+    Commit GitCommands file
+
+commit 30e8d0f5354f75467225ccd9760f046acd8186c9
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Thu Nov 3 15:14:52 2022 +0530
+
+    Commit GitCommands file
+
+commit 0bfd83f313f36686f42402be7ca0b822426c9685
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Thu Nov 3 15:04:59 2022 +0530
+
+    Change made
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
 $ git log --pretty=format:"%h -- %an"
+2543cf4 -- Vaishnavi
+be9b35b -- Vaishnavi
 30e8d0f -- Vaishnavi
 0bfd83f -- Vaishnavi
 5afd441 -- Vaishnavi
@@ -1405,6 +1243,8 @@ b31a057 -- Vaishnavi
 
 Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
 $ git log --pretty=format:"%h -- %ae"
+2543cf4 -- vaishnavi@gmail.com
+be9b35b -- vaishnavi@gmail.com
 30e8d0f -- vaishnavi@gmail.com
 0bfd83f -- vaishnavi@gmail.com
 5afd441 -- vaishnavi@gmail.com
@@ -1422,21 +1262,105 @@ b31a057 -- vaishnavi@gmail.com
 58634cd -- vaishnavi@gmail.com
 
 Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
-$ git log --pretty=format:"%h -- %ad"
-be9b35b -- Thu Nov 3 15:20:37 2022 +0530
-30e8d0f -- Thu Nov 3 15:14:52 2022 +0530
-0bfd83f -- Thu Nov 3 15:04:59 2022 +0530
-5afd441 -- Thu Nov 3 15:01:40 2022 +0530
-fe4767a -- Thu Nov 3 14:43:52 2022 +0530
-ece04ba -- Thu Nov 3 13:37:26 2022 +0530
-5fdd712 -- Thu Nov 3 13:29:04 2022 +0530
-0b419ea -- Thu Nov 3 13:10:16 2022 +0530
-fa09b65 -- Thu Nov 3 12:50:51 2022 +0530
-abd0c3f -- Wed Nov 2 18:32:09 2022 +0530
-43c6279 -- Wed Nov 2 18:31:13 2022 +0530
-69d2476 -- Wed Nov 2 18:25:19 2022 +0530
-b31a057 -- Wed Nov 2 18:24:51 2022 +0530
-8aaa355 -- Wed Nov 2 17:41:03 2022 +0530
-3c90640 -- Wed Nov 2 14:23:50 2022 +0530
-58634cd -- Wed Nov 2 14:21:13 2022 +0530
+$ git commit --amend
+[master a2e9314] Done 4 Vaishnavi Pardeshi
+ Date: Thu Nov 3 15:27:15 2022 +0530
+ 3 files changed, 19 insertions(+), 1 deletion(-)
+ create mode 100644 MyExcelFile.xls
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git log
+commit a2e93144e46305ebeb4a6f98edf7e6c5a166b298 (HEAD -> master)
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Thu Nov 3 15:27:15 2022 +0530
+
+    Done 4 Vaishnavi Pardeshi
+
+commit be9b35b4b61c7d60c4d639159b8f2694d7f12587
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Thu Nov 3 15:20:37 2022 +0530
+
+    Commit GitCommands file
+
+commit 30e8d0f5354f75467225ccd9760f046acd8186c9
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Thu Nov 3 15:14:52 2022 +0530
+
+    Commit GitCommands file
+
+commit 0bfd83f313f36686f42402be7ca0b822426c9685
+Author: Vaishnavi <vaishnavi@gmail.com>
+Date:   Thu Nov 3 15:04:59 2022 +0530
+
+    Change made
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   GitCommands.txt
+        modified:   MyExcelFile.xls
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git add .
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   GitCommands.txt
+        modified:   MyExcelFile.xls
+
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git restore --staged GitCommands.txt
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   MyExcelFile.xls
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   GitCommands.txt
+
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   MyExcelFile.xls
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   GitCommands.txt
+        modified:   MyExcelFile.xls
+
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git checkout -- MyExcelFile.xls
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   MyExcelFile.xls
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   GitCommands.txt
+
+
 
