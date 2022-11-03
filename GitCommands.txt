@@ -1384,3 +1384,40 @@ Date:   Wed Nov 2 14:21:13 2022 +0530
 
     Commit all files
 
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git log --pretty=format:"%h -- %an"
+30e8d0f -- Vaishnavi
+0bfd83f -- Vaishnavi
+5afd441 -- Vaishnavi
+fe4767a -- Vaishnavi
+ece04ba -- Vaishnavi
+5fdd712 -- Vaishnavi
+0b419ea -- Vaishnavi
+fa09b65 -- Vaishnavi
+abd0c3f -- Vaishnavi
+43c6279 -- Vaishnavi
+69d2476 -- Vaishnavi
+b31a057 -- Vaishnavi
+8aaa355 -- Vaishnavi
+3c90640 -- Vaishnavi
+58634cd -- Vaishnavi
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git log --pretty=format:"%h -- %ae"
+30e8d0f -- vaishnavi@gmail.com
+0bfd83f -- vaishnavi@gmail.com
+5afd441 -- vaishnavi@gmail.com
+fe4767a -- vaishnavi@gmail.com
+ece04ba -- vaishnavi@gmail.com
+5fdd712 -- vaishnavi@gmail.com
+0b419ea -- vaishnavi@gmail.com
+fa09b65 -- vaishnavi@gmail.com
+abd0c3f -- vaishnavi@gmail.com
+43c6279 -- vaishnavi@gmail.com
+69d2476 -- vaishnavi@gmail.com
+b31a057 -- vaishnavi@gmail.com
+8aaa355 -- vaishnavi@gmail.com
+3c90640 -- vaishnavi@gmail.com
+58634cd -- vaishnavi@gmail.com
+
