@@ -599,3 +599,101 @@ Changes to be committed:
         modified:   .gitignore
         modified:   GitCommands.txt
         new file:   static/TxtFile.txt
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git commit -m "All changes done"
+[master b31a057] All changes done
+ 3 files changed, 264 insertions(+), 1 deletion(-)
+ create mode 100644 static/TxtFile.txt
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   GitCommands.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git add --a
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   GitCommands.txt
+
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git commit -m "Done"
+[master 69d2476] Done
+ 1 file changed, 48 insertions(+)
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   MyDocsFile.docx
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   MyDocsFile.docx
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        First.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git commit -a -m "Direct Commit"
+[master 43c6279] Direct Commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        First.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git add First.txt
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   First.txt
+
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git commit -a -m "Add First.txt"
+[master abd0c3f] Add First.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 First.txt
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
