@@ -1421,3 +1421,22 @@ b31a057 -- vaishnavi@gmail.com
 3c90640 -- vaishnavi@gmail.com
 58634cd -- vaishnavi@gmail.com
 
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git log --pretty=format:"%h -- %ad"
+be9b35b -- Thu Nov 3 15:20:37 2022 +0530
+30e8d0f -- Thu Nov 3 15:14:52 2022 +0530
+0bfd83f -- Thu Nov 3 15:04:59 2022 +0530
+5afd441 -- Thu Nov 3 15:01:40 2022 +0530
+fe4767a -- Thu Nov 3 14:43:52 2022 +0530
+ece04ba -- Thu Nov 3 13:37:26 2022 +0530
+5fdd712 -- Thu Nov 3 13:29:04 2022 +0530
+0b419ea -- Thu Nov 3 13:10:16 2022 +0530
+fa09b65 -- Thu Nov 3 12:50:51 2022 +0530
+abd0c3f -- Wed Nov 2 18:32:09 2022 +0530
+43c6279 -- Wed Nov 2 18:31:13 2022 +0530
+69d2476 -- Wed Nov 2 18:25:19 2022 +0530
+b31a057 -- Wed Nov 2 18:24:51 2022 +0530
+8aaa355 -- Wed Nov 2 17:41:03 2022 +0530
+3c90640 -- Wed Nov 2 14:23:50 2022 +0530
+58634cd -- Wed Nov 2 14:21:13 2022 +0530
+
