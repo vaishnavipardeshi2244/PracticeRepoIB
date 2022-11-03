@@ -1139,3 +1139,162 @@ b31a057ad92bb27202c099ec4ff5008670e0d8f6 All changes done
 3c9064020e68349b33d95a84e88299506a61a6ea Add .gitignore
 58634cd5e417a98689ef92b2ab4299b9a570f6ac Commit all files
 
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   GitCommands.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git commit -a -m "Changed GitCommands.txt"
+[master 5afd441] Changed GitCommands.txt
+ 1 file changed, 273 insertions(+)
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git log --pretty=short
+commit 5afd4411236bcdf91f6fe5c6a5a35abfa62b4d44 (HEAD -> master)
+Author: Vaishnavi <vaishnavi@gmail.com>
+
+    Changed GitCommands.txt
+
+commit fe4767a0a1479defe5869a7fbe8f7ba139bdd1ce
+Author: Vaishnavi <vaishnavi@gmail.com>
+
+    Done3
+
+commit ece04baceac6779cc2985b86321e62610bc009c4
+Author: Vaishnavi <vaishnavi@gmail.com>
+
+    Done2
+
+commit 5fdd712c475a02b6d90c2741b7492458a73fdb09
+Author: Vaishnavi <vaishnavi@gmail.com>
+
+    Done Commit
+
+commit 0b419eac9f3dc24602262f9a80cb02f44f2cdb5f
+Author: Vaishnavi <vaishnavi@gmail.com>
+
+    renamed First.txt
+
+commit fa09b6532e64eefd57ee24a2ed1182bbe8c6fc3f
+Author: Vaishnavi <vaishnavi@gmail.com>
+
+    Modified
+
+commit abd0c3fe14028723ff4a2b645e8bad0e473e274f
+Author: Vaishnavi <vaishnavi@gmail.com>
+
+    Add First.txt
+
+commit 43c6279014f75ceffb2fb688b903018947de6a4e
+Author: Vaishnavi <vaishnavi@gmail.com>
+
+    Direct Commit
+
+commit 69d24761e70c29bedf9035e639ef5b50e343ec53
+Author: Vaishnavi <vaishnavi@gmail.com>
+
+    Done
+
+commit b31a057ad92bb27202c099ec4ff5008670e0d8f6
+Author: Vaishnavi <vaishnavi@gmail.com>
+
+    All changes done
+
+commit 8aaa3556b2e84389b976a9a0256169559adbf320
+Author: Vaishnavi <vaishnavi@gmail.com>
+
+    Modify GitCommands.txt
+
+commit 3c9064020e68349b33d95a84e88299506a61a6ea
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git log --pretty=full
+commit 5afd4411236bcdf91f6fe5c6a5a35abfa62b4d44 (HEAD -> master)
+Author: Vaishnavi <vaishnavi@gmail.com>
+Commit: Vaishnavi <vaishnavi@gmail.com>
+
+    Changed GitCommands.txt
+
+commit fe4767a0a1479defe5869a7fbe8f7ba139bdd1ce
+Author: Vaishnavi <vaishnavi@gmail.com>
+Commit: Vaishnavi <vaishnavi@gmail.com>
+
+    Done3
+
+commit ece04baceac6779cc2985b86321e62610bc009c4
+Author: Vaishnavi <vaishnavi@gmail.com>
+Commit: Vaishnavi <vaishnavi@gmail.com>
+
+    Done2
+
+commit 5fdd712c475a02b6d90c2741b7492458a73fdb09
+Author: Vaishnavi <vaishnavi@gmail.com>
+Commit: Vaishnavi <vaishnavi@gmail.com>
+
+    Done Commit
+
+commit 0b419eac9f3dc24602262f9a80cb02f44f2cdb5f
+Author: Vaishnavi <vaishnavi@gmail.com>
+Commit: Vaishnavi <vaishnavi@gmail.com>
+
+    renamed First.txt
+
+commit fa09b6532e64eefd57ee24a2ed1182bbe8c6fc3f
+Author: Vaishnavi <vaishnavi@gmail.com>
+Commit: Vaishnavi <vaishnavi@gmail.com>
+
+    Modified
+
+commit abd0c3fe14028723ff4a2b645e8bad0e473e274f
+Author: Vaishnavi <vaishnavi@gmail.com>
+Commit: Vaishnavi <vaishnavi@gmail.com>
+
+    Add First.txt
+
+commit 43c6279014f75ceffb2fb688b903018947de6a4e
+Author: Vaishnavi <vaishnavi@gmail.com>
+Commit: Vaishnavi <vaishnavi@gmail.com>
+
+    Direct Commit
+
+commit 69d24761e70c29bedf9035e639ef5b50e343ec53
+Author: Vaishnavi <vaishnavi@gmail.com>
+Commit: Vaishnavi <vaishnavi@gmail.com>
+
+    Done
+
+commit b31a057ad92bb27202c099ec4ff5008670e0d8f6
+Author: Vaishnavi <vaishnavi@gmail.com>
+Commit: Vaishnavi <vaishnavi@gmail.com>
+
+    All changes done
+
+commit 8aaa3556b2e84389b976a9a0256169559adbf320
+Author: Vaishnavi <vaishnavi@gmail.com>
+Commit: Vaishnavi <vaishnavi@gmail.com>
+
+    Modify GitCommands.txt
+
+commit 3c9064020e68349b33d95a84e88299506a61a6ea
+Author: Vaishnavi <vaishnavi@gmail.com>
+Commit: Vaishnavi <vaishnavi@gmail.com>
+
+    Add .gitignore
+
+commit 58634cd5e417a98689ef92b2ab4299b9a570f6ac
+Author: Vaishnavi <vaishnavi@gmail.com>
+Commit: Vaishnavi <vaishnavi@gmail.com>
+
+    Commit all files
+
