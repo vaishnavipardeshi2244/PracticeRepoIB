@@ -1362,5 +1362,84 @@ Changes not staged for commit:
   (use "git restore <file>..." to discard changes in working directory)
         modified:   GitCommands.txt
 
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git remote
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git remote add origin git@github.com:vaishnavipardeshi2244/PracticeRepoIB.git
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git remote
+origin
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git remote -v
+origin  git@github.com:vaishnavipardeshi2244/PracticeRepoIB.git (fetch)
+origin  git@github.com:vaishnavipardeshi2244/PracticeRepoIB.git (push)
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ git push -u origin master
+The authenticity of host 'github.com (20.207.73.82)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ADDING NEW SSH KEY COMMANDS:
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ ssh-keygen -t rsa -b ed25519 -C "vaishnavipardeshi2244@gmail.com"
+Bits has bad value ed25519 (invalid)
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ ssh-keygen -t rsa -b 4096 -C "vaishnavipardeshi2244@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/Vaishnawi Pardeshi/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Vaishnawi Pardeshi/.ssh/id_rsa
+Your public key has been saved in /c/Users/Vaishnawi Pardeshi/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:090D+SuOcPfeXk9owuT7G749io3r6c5MZg8PHdskzRY vaishnavipardeshi2244@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|                 |
+|             .   |
+|            o  E |
+|         . . +o .|
+|        S . oo+= |
+|         . +. B+ |
+|        . .**o=.o|
+|         o*+XB *o|
+|          =@+BO+*|
++----[SHA256]-----+
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ eval "$(ssh-agent -s)"
+Agent pid 2030
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ ssh-add ~/.ssh/id_ed25519
+/c/Users/Vaishnawi Pardeshi/.ssh/id_ed25519: No such file or directory
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ ssh-add ~/.ssh/id_rsa
+Identity added: /c/Users/Vaishnawi Pardeshi/.ssh/id_rsa (vaishnavipardeshi2244@gmail.com)
+
+Vaishnawi Pardeshi@IB-SEZ-LAP-938 MINGW32 ~/Desktop/Git Practice (master)
+$ tail ~/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDdEp0TG5jrOirFLA+MIJWYBc61JM2lxo1KGcVWsP/Ovi1GqQYboPjlBLvTEKC14Emm5YYwHiaV8TqzWC1R5NlX/XAdrhU3hbHqASYBqjMOrOJaxNZLWsOBD/EKy6F253/2kpfBE//U37S6BvHVkEyusWwvFiBIY02BlSp44v3GLx++Z30P0McnTU1e6eDVrSIyS0XIVWOR9QzQnLkiGfnODbUKlAa6tO568xLGWqGTYHX5p9TYgnLuDRq9Xvk2wo9pDvTe6Fr9rBDgTTaOlIDeaXU6JTmHwk4iBbw1cy1XPBbusk/5lTvguclP2RSSv9YeCkWeuNpgserDHb4bjIIKhZEB7REbE4AdroNAgsWC/J5o8ST9x73WA1tVX/ybsW7BVOoFcFZFbqep+QLU1r120VM2nLs3f77xmBQbT/OTcMx83BhAglF9rwc8wRN1VmjmDwFQLhRgQ/FKql8Dyyb+eUnCuum3PdnyMISQdDx9WDYLUj64ALmrzg1swzrVVVIaheuhk3CxF20wtsmXiT4K8zgX6plznfqexMvmWw34eTEnSxmZr8kBHTJcDhHWLnuZFVyr+UNbkYfaPGeeZJT57y5JAph2jtZ1BC6Xaq9QZ2S1kciprdqe93jw1i/Ut/zLFAI95ale1HJK/hLCGhz2spHfgN/0axCupmEykxAFBQ== vaishnavipardeshi2244@gmail.com
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
